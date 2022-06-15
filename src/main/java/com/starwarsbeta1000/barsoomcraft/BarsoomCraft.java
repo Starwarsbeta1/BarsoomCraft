@@ -1,5 +1,6 @@
 package com.starwarsbeta1000.barsoomcraft;
 
+import com.starwarsbeta1000.barsoomcraft.block.ModBlocks;
 import com.starwarsbeta1000.barsoomcraft.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class BarsoomCraft {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

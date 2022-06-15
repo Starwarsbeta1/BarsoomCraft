@@ -14,8 +14,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BarsoomCraft.MOD_ID);
 
-    public static final RegistryObject<Item> BARSOOM_QUARTZ = ITEMS.register( "barsoom_quartz",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> BARSOOM_QUARTZ = ITEMS.register(
+            "barsoom_quartz",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+    );
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
